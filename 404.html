@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI驱动的测试运维平台，集成需求管理、用例管理、缺陷管理、AI工作流、测试工具和报告中心" />
+    <title>AI TestOps Platform - 智能测试运维平台</title>
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('testops-theme') || 'light';
+          var colorScheme = localStorage.getItem('testops-color-scheme') || 'default';
+          if (theme === 'system') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.classList.add(theme);
+          document.documentElement.setAttribute('data-color-scheme', colorScheme);
+        } catch (e) {
+          document.documentElement.classList.add('light');
+          document.documentElement.setAttribute('data-color-scheme', 'default');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-B6p1h6an.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BUqfes-B.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
